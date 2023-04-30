@@ -61,9 +61,9 @@ function GetInfo() {
       day4H.innerHTML = `High: ${data.list[24].main.temp_max}&deg;C`;
 
       day5.innerHTML = new Date(data.list[32].dt_txt).toDateString();
-	  img5.src = https://openweathermap.org/img/w/${data.list[32].weather[0].icon}.png;
-	  day5L.innerHTML = Low; ${data.list[32].main.temp_min}&deg;C;
-	  day5H.innerHTML = High; ${data.list[32].main.temp_max}&deg;C;
+	  img5.src = `https://openweathermap.org/img/w/${data.list[32].weather[0].icon}.png`;
+	  day5L.innerHTML = `Low; ${data.list[32].main.temp_min}&deg;C`;
+	  day5H.innerHTML = `High; ${data.list[32].main.temp_max}&deg;C`;
 	    // show weather container
   weatherContainer.style.display = 'block';
 })
