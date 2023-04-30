@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body onload="DefaultScreen()">
+    <center>
+        <h1 id="Para1">5 Day Forecast</h1>
+        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+        <button type="button" onclick="GetInfo()">See Forecast</button>
+        <h2 id="cityName">City Name</h2>
+    </center>
+
+    <div id="weatherContainer">
+        <div id="iconsContainer">
+            <div class="icons">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                <p class="lowValue" id="day1L">Loading...</p>
+                <p class="highValue" id="day1H">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                <p class="lowValue" id="day2L">Loading...</p>
+                <p class="highValue" id="day2H">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                <p class="lowValue" id="day3L">Loading...</p>
+                <p class="highValue" id="day3H">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                <p class="lowValue" id="day4L">Loading...</p>
+                <p class="highValue" id="day4H">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                <p class="lowValue" id="day5L">Loading...</p>
+                <p class="highValue" id="day5H">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
